@@ -123,6 +123,7 @@
       .then(response => response.json())
       .then(data => {
         pokemonList = data.results;
+        console.log(pokemonList)
       })
       .catch(error => {
         document.getElementById("result").textContent = "Error loading Pokémon list.";
